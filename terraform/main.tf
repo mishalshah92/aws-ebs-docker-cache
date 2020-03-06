@@ -1,7 +1,6 @@
 locals {
   name_prefix         = "docker-cache-${var.stack_name}-${var.env}"
   path_prefix         = "/${var.aws_region}/${var.owner}/${var.stack_name}/${var.env}/"
-  ingress_cidr_blocks = "10.0.0.0/8"
 }
 
 provider "aws" {

@@ -12,16 +12,6 @@ resource "aws_security_group" "docker_cache_security_group" {
     Tool       = var.tool
   }
 
-  ingress {
-    from_port = "22"
-    to_port   = "22"
-    protocol  = "tcp"
-
-    cidr_blocks = [
-      local.ingress_cidr_blocks,
-    ]
-  }
-
   egress {
     from_port = "0"
     to_port   = "0"
