@@ -1,0 +1,16 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ssm:PutParameter",
+                "ec2:Describe*",
+                "ec2:CreateSnapshots",
+                "ec2:CreateSnapshot",
+                "ec2:CreateTags"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
