@@ -29,4 +29,5 @@ override.tf.json
 # example: *tfplan*
 
 .idea
-!/test/go.mod
+test/go.mod
+test/go.sum
